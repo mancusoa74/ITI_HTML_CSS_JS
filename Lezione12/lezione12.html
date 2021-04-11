@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Antonio Mancuso" />
+    <meta name="description" content="Template HTML" />
+    <meta name="keywords" content="template, html, lezioni, scuola" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="111">
+    <title>Template HTML</title>
+</head>
+
+<body>
+    <h1 id="inizio">Benvenuti nel fantastico mondo del World Wide Web!!!</h1>
+    <h2>FORM</h2>
+    <p>
+        Il <b>form</b> (letteralmente modulo) 
+        indica la parte di interfaccia utente di un'applicazione web che 
+        consente all'utente client di inserire e inviare al 
+        web server/application server uno o più dati.
+    </p>
+    <p>
+        Il <b>form</b>è composto da componenti 
+        grafici detti widget presenti sull'interfaccia stessa.
+        Nella maggior parte dei casi il termine è
+        riferito a form contenuti in una pagina web: ad esempio, le caselle 
+        di testo e i menu a tendina di una pagina di registrazione o di login 
+        costituiscono un form.
+    </p>
+    <h3>Inserisci i tuoi dati</h3>
+    <form>
+        <fieldset>
+            <legend>Dati Personali</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome"><br><br>
+
+            <label for="genere">Genere:</label>
+            <select name="genere" id="cars">
+                <option value="maschio">Maschio</option>
+                <option value="femmina">Femmina</option>
+            </select><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd"><br><br>
+
+            <label for="birthday">Nato il:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            
+            <label>Nazionalità: </label><br>
+            <input list="nazioni" name="nazioni">
+            <datalist id="nazioni">
+                <option value="Albanese">
+                <option value="Argentina">
+                <option value="Belga">
+                <option value="Biellorussa">
+                <option value="Italiana">
+                <option value="Irlandese">
+                <option value="Israeliana">
+            </datalist><br><br>
+
+            <label>Occupazione</label><br>
+            <input type="radio" id="studente" name="occupazione" value="studente">
+            <label for="studente">Studente</label><br>
+            <input type="radio" id="occupato" name="occupazione" value="occupato">
+            <label for="occupato">Occupato</label><br>
+            <input type="radio" id="disoccupato" name="occupazione" value="disoccupato">
+            <label for="disoccupato">Disoccupato</label><br><br>
+            
+            <label>Sport</label><br>
+            <input type="checkbox" id="tennis" name="tennis" value="tennis">
+            <label for="tennis">Tennis</label><br>
+            <input type="checkbox" id="calcio" name="calcio" value="calcio">
+            <label for="calcio">Calcio</label><br>
+            <input type="checkbox" id="nuoto" name="nuoto" value="nuoto">
+            <label for="nuoto">Nuoto</label><br><br>
+
+            <label>Peso:</label>
+            <input type="range" min="50" max="100" value="60" class="slider" id="peso"><br>
+            
+            <label for="altezza">Altezza:</label>
+            <input type="number" id="altezza" name="altezza" min="150" max="200"><br><br>
+            
+            <label for="favcolor">Colore preferito:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+            
+
+            <label for="bio">Biografia:</label>
+            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Inserisci la tua biografia"></textarea>
+      
+            <br><br>
+            <input type="submit" value="Invia"> 
+        </fieldset>
+    </form>
+</body>
+
+</html>

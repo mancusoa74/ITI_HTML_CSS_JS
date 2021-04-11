@@ -1,0 +1,53 @@
+/* CSS reset */
+* {
+	margin:0;
+	padding:0;
+}
+
+/* Reset floating */
+.clear {
+	clear: both;
+}
+
+.width {
+	width: 940px;
+	margin: 0 auto;
+}
+
+header {
+	background-color:lightskyblue;
+	height: 50px;
+}
+
+nav {
+	background-color: mediumslateblue;
+	height: 50px;
+}
+
+main {
+	background-color: orange;
+}
+
+section {
+	background-color:lightpink;
+	float: left;
+	width: 66%;
+}
+
+article {
+	background-color:yellowgreen;
+	height: 150px;
+}
+
+aside {
+	background-color:powderblue;
+	width: 30%;
+	height: 516px;
+	float: right;
+}
+
+
+footer {
+	background-color:orangered;
+	height: 100px;
+}
