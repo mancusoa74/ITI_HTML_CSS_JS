@@ -8,90 +8,92 @@
     <meta name="keywords" content="template, html, lezioni, scuola" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content="1">
-    <title>Template HTML</title>
+    <link rel="stylesheet" href="css/lezioni.css" type="text/css" />
+    <title>Lezione 11</title>
 </head>
 
 <body>
-    <h1 id="inizio">Benvenuti nel fantastico mondo del World Wide Web!!!</h1>
+    <h1>Lezione 11: le liste</h1>
+    <h2>LISTE</h2>
+    <h3>DEFINITION LIST</h3>
     <p>
-        In passato lo sviluppo web era ampiamente basato sull'uso di <b>tabelle</b><br>
-        Principalmente le tabelle venivano usato per creare il layout della
-        pagina Web<br>
-        Tuttavia questo metodo era laborioso e poco funzionale in quanto il supporto
-        delle tabelle dai vari browser non era omogeneo.<br>
-        Oggi il NON si realizza più con le tabelle ma con il blocco <b>DIV</b>.
+        In un testo o un articolo, risulta particolarmente utile organizzare il 
+        contenuto in modo schematico e rappresentare le informazioni tramite una lista.
     </p>
     <p>
-        Tuttavia lo scopo originario delle tabelle, cioè visualizzare contenuti
-        in formato tabellare rimane valido.
+        HTML ci viene in aiuto con un <b>definition list</b> tramite 
+        tre tag <b>dl</b>, <b>dt</b> e <b>dd</b><br>
+        <dl>
+            <dt>dl</dt>
+            <dd>Rappresenta un <b>definition list</b></dd>
+            <dt>dt</dt>
+            <dd>Rappresenta un <b>definition term</b></dd>
+            <dt>dd</dt>
+            <dd>Rappresenta un <b>item</b> o la definizione di un termine</dd>
+
+        </dl>
+    </p>
+    <p>
+        <br/>
+        Esmpio: I componenti di un computer
+        <dl>
+            <dt>CPU</dt>
+            <dd>Central Processing Unit</dd>
+            <dt>RAM</dt>
+            <dd>Random Access Memeory</dd>
+            <dt>HDD</dt>
+            <dd>Hard Disk Drive</dd>
+            <dt>SSD</dt>
+            <dd>Solid State Disk</dd>
+        </dl>
     </p>
 
-    <table border="1">
-        <caption>A AND B</caption>
-        <thead>
-            <tr>
-                <td>A</td>
-                <td>B</td>
-                <td>A & B</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table border="1">
-        <caption>A OR B</caption>
-        <thead>
-            <tr>
-                <td>A</td>
-                <td>B</td>
-                <td>A | B</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td align="center">0</td>
-                <td align="center">0</td>
-                <td align="center">0</td>
-            </tr>
-            <tr>
-                <td align="center">0</td>
-                <td align="center">1</td>
-                <td align="center">1</td>
-            </tr>
-            <tr>
-                <td align="center">1</td>
-                <td align="center">0</td>
-                <td align="center">1</td>
-            </tr>
-            <tr>
-                <td align="center">1</td>
-                <td align="center">1</td>
-                <td align="center">1</td>
-            </tr>
-        </tbody>
-    </table>
-  
+    <h3>UNORDERED LIST</h3>
+    <p>
+        Ci sono poi le liste di tipo <b>non ordinato</b> che si creano con 2 tag:<br>
+        <ul>
+            <li>
+                <b>ul</b>: tag che definisce la lista non ordinata <b>U</b>nordered <b>L</b>ist
+            </li>
+            <li>
+                <b>li</b>: tag che definisce l'elemento/item della lista <b>L</b>ist <b>I</b>tem
+            </li>
+        </ul>
+    </p>
+    <p>
+        <br/>
+        Esmpio: I componenti di un computer
+        <ul>
+            <li>CPU: Central Processing Unit</li>
+            <li>RAM: Random Access Memeory</li>
+            <li>HDD: Hard Disk Drive</li>
+            <li>SSD: Solid State Disk</li>
+        </ul>
+    </p>
+
+    <h3>ORDERED LIST</h3>
+    <p>
+        Ci sono poi le liste di tipo <b>ordinato</b> che si creano con 2 tag:<br>
+        <ol>
+            <li>
+                <b>ol</b>: tag che definisce la lista ordinata <b>O</b>rdered <b>L</b>ist
+            </li>
+            <li>
+                <b>li</b>: tag che definisce l'elemento/item della lista <b>L</b>ist <b>I</b>tem
+            </li>
+        </ol>
+    </p>
+    <p>
+        <br/>
+        Esmpio: I componenti di un computer
+        <ol>
+            <li>CPU: Central Processing Unit</li>
+            <li>RAM: Random Access Memeory</li>
+            <li>HDD: Hard Disk Drive</li>
+            <li>SSD: Solid State Disk</li>
+        </ol>
+    </p>
+
 </body>
 
 </html>

@@ -7,65 +7,64 @@
     <meta name="description" content="Template HTML" />
     <meta name="keywords" content="template, html, lezioni, scuola" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="10">
-    <title>Template HTML</title>
+    <meta http-equiv="refresh" content="1">
+    <link rel="stylesheet" href="css/lezioni.css" type="text/css" />
+    <title>Lezione 07</title>
 </head>
 
 <body>
-    <h1 id="inizio">Benvenuti nel fantastico mondo del World Wide Web!!!</h1>
-    <h2>A</h2>
+    <h1>Lezione 07: i tag abbr, strong, small, sub, sup e hr</h1>
+    <h2>&lt;abbr&gt;</h2>
     <p>
-        Una delle funzionalità principali e storiche dell'HTML e del WWW sono
-        i link (ipertesto).
-        Per inserire un link usa il tag <b>a</b>
+        Quando scrivi un testo, soprattutto di carattere tecnico, può tornare
+        utile specificare il significato delle abbreviazioni.
     </p>
     <p>
-        Il tag <b>a</b> significa <b>anchor</b> è crea un link ad 
-        una <a href="https://agnelli.it/">pagina web</a>
+        Per esempio <abbr title="Gnu is Not Unix">GNU</abbr> di GNU/linux sembra una 
+        parola ma in realtà è un acronimo o abbreviazione.
     </p>
     <p>
-        Oppure un link ad <a href="#end">una sezione della pagina</a> 
-    </p>
-    <p>
-        E' anche possibile specificare dove aprire il link "cliccato" tramite
-        l'attributo <b>target</b>.
-    </p>
-    <p>
-        Apri il <a href="https://agnelli.it/" target="_blank">link</a> in una nuova tab del browser.
+        Prova ad aumentare il refresh e a posizionare il mouse sull'abreviazione.
     </p>
 
-
-    <h2>IMG</h2>
+    <h2>&lt;strong&gt;</h2>
     <p>
-        Spesso usiamo HTML per scrivere degli articoli o dei contenuti testuali.
-    </p>
-    <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.
-    </p>
-    <p>
-        Ma ovviamente <strong>un'immagine vale 1000 parole.</strong>
-    </p>
-    <img src="https://satyamounika11.github.io/html5.jpg" alt="HTML5">
-    <p>
-        Per inserire un immagine usa il tag <b>img</b>. L'attributo <b>src</b>
-        serve per specificare l'indirizzo o URL dell'immagine. 
-    </p>
-    <p>
-        L'immagine può essere sul Web o sul Disco locale
-    </p>
-    <img src="img/lezione07_01.jpg" alt="CSS">
-    <p>
-        E' sempre corretto aggiungere l'attributo <b>alt</b> per 
-        inserire un testo alternativo in caso in cui l'immagine non
-        sia disponibile.
+        Quando vogliamo evidenziare una parola o un testo 
+        <strong>di particolare importanza</strong>
+        usiamo il tag <b>strong</b>
     </p>
 
-    <h1 id="end">
-        <a href="#inizio">Torna all'inizio</a>
-    </h1>
+    <h2>&lt;small&gt;</h2>
+    <p>
+        Al contrario quando un testo <small>è di poca importanza</small>
+        si può usare il tag <b>small</b>
+    </p>
+    <p>
+        <small>
+            Commento aggiunto il 03/01/2021
+        </small>
+    </p>
 
-    
+    <h2>&lt;sub&gt; e &lt;sup&gt;</h2>
+    <p>
+        Il logaritmo in base 2 di 8 è 3. log<sub>2</sub> 8 = 3
+    </p>
+    <p>
+        In modo analogo 2<sup>3</sup> = 8
+    </p>
+    <p>
+        Gli <sup>apici</sup> si ottengono son il tag <b>sup</b> mentre i 
+        <sub>pedici</sub> con il tag <b>sub</b>
+    </p>
 
+    <H2>&lt;hr&gt;</H2>
+    <p>
+        Per inserire una linea di sperazione tra pèaragrafi usa il tag <b>hr</b>.
+    </p>
+    <hr>
+    <p> 
+        Verrà inseita una linea separatrice di larga quanto tutta la pagina.
+    </p>
 </body>
 
 </html>

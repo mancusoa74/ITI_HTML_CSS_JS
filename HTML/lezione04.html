@@ -8,37 +8,61 @@
     <meta name="keywords" content="template, html, lezioni, scuola" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content="1">
-    <title>Template HTML</title>
+    <link rel="stylesheet" href="css/lezioni.css" type="text/css" />
+    <title>Lezione 04</title>
+    <style>
+        .bordato {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Benvenuti nel fantastico mondo del World Wide Web!!!</h1>
-    <h2>P</h2>
+    <h1>Lezione 04: elementi inline e block</h1>
+    
     <p>
-        Il tag "p" definisce un paragrafo di testo lungo a piacere. 
+        Ogni elemento HTML ha un valore di display in funzione del tipo di elemento:
+        <ul>
+            <li><b>inline</b> element</li>
+            <li><b>block</b> element</li>
+        </ul>
+    </p>
+
+    <p>
+        <h1>INLINE</h1>
+        <ul>
+            <li>Un elemento inline non comincia su una nuova linea</li>
+            <li>Un elemento inline occupa solo la larghezza minima necessaria</li>
+        </ul>                
+        Esempi di elementi inline sono:<br/><br/>
+        a, button, input, cite, code, small, i, img, sub, …
+        <br/><br/>
+        <span>Questo è un elemento di tipo inline</span>
+        <span>Questo è un altro elemento di tipo inline</span>
+        <br/><br/>
+            <span class="bordato">Questo è un elemento di tipo inline</span>
+            <span class="bordato">Questo è un altro elemento di tipo inline</span>
     </p>
     <p>
-        Ogni paragrafo è preceduto e seguito da una linea bianca distanziatrice.
+        <h1>BLOCK</h1>
+        <ul>
+            <li>Un elemento block comincia sempre su una nuova linea</li>
+            <li>Un elemento block occupa tutta la larghezza possibile anche se non necessaria</li>
+            <li>Un elemento block ha un margine superiore ed inferiore</li>
+        </ul>  
+        Esempi di elementi inline sono:<br/><br/>
+        address,ol, video, article, hr, li, main, nav, footer, …
+        <br/><br/>
+        <div>Questo è un elemento di tipo block</div>
+        <div>Questo è un altro elemento di tipo block</div>
+        <br/>    
+        <div class="bordato">Questo è un elemento di tipo block</div>
+        <div class="bordato">Questo è un altro elemento di tipo block</div>
     </p>
-    <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting 
-        industry. Lorem Ipsum has been the industry's standard dummy text 
-        ever since the 1500s, when an unknown printer took a galley of 
-        type and scrambled it to make a type specimen book. It has 
-        survived not only five centuries, but also the leap into electronic 
-        typesetting, remaining essentially unchanged. It was popularised 
-        in the 1960s with the release of Letraset sheets containing Lorem 
-        Ipsum passages, and more recently with desktop publishing software 
-        like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-    <h2>SPAN</h2>
-    <span>
-        Il tag "span" definisce un container inline senza una semantica particolare. 
-    </span>
-    <p>
-        E' utile per <span style="color:blue">modificare</span> una parte di testo
-        in un paragrafo on in altre sezione di un documento HTML 
-    </p> 
+
+    Maggior informazioni qui:
+    <a href="https://www.w3schools.com/html/html_blocks.asp">https://www.w3schools.com/html/html_blocks.asp</a>
 </body>
 
 </html>
+

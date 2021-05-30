@@ -8,71 +8,84 @@
     <meta name="keywords" content="template, html, lezioni, scuola" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content="1">
-    <title>Template HTML</title>
+    <link rel="stylesheet" href="css/lezioni.css" type="text/css" />
+    <title>Lezione 09</title>
 </head>
 
 <body>
-    <h1 id="inizio">Benvenuti nel fantastico mondo del World Wide Web!!!</h1>
-    <h2>KBD</h2>
+    <h1>Lezione 09: i tag br, blockquote, cite, code, pre e details</h1>
+    <h2>&lt;br&gt;</h2>
     <p>
-        Il tag <b>kbd</b> serve per indicare un input che l'utente deve inserire.<br>
-        Se vuoi fare il refresh di una pagina web premi <kbd>Ctrl + R</kbd>
+        Come visto fino ad ora lo sviluppatore non ha controllo su come
+        i paragrafi vengano visualizzati.
+        Per esempio il testo va a capo automaticamente in funzione della
+        dimensione della finestra del browser.<br>
+        Tuttavia usando il tag <b>br</b> è  possibile <br>
+        decidere quando andare a capo.
+        <br>
+        In alcuni casi è utile.
+    </p>
+    
+    <h2>&lt;blockqoute&gt;</h2>
+    <p>
+        Alle volte in un testo si vuole "quotare" un altro autore.
+        Tuttavia non sempre è possibile riportare il riferimento all'autore in modo integrale.
+        Quindi con il tag <b>blockquote</b> si può definire una quotazione
+        indicando la sorgente dell'informazione
+        <blockquote cite="https://it.wikipedia.org/wiki/Giovanni_Bosco">La sottrazione di benevolenza è un castigo che eccita l'emulazione</blockquote>
+    </p>
+    <p>
+        Come si può notare la citazione è indentata. Il link alla citazione 
+        non ha un effetto visivo ma può essere utile al motore di ricerca
+        o altri tool.
     </p>
 
-    <h2>METER</h2>
+    <h2>&lt;cite&gt;</h2>
     <p>
-        Un modo molto efficace per visualizzare il progresso di un attività o evento
-        è l'uso del tag <b>meter</b>
-    </p>
-    <p>
-        Andamento dei voti:<br>
-        Studente 1 <meter min="0" max="10" value="8">Studente 1</meter><br>
-        Studente 2 <meter min="0" max="10" value="6.5">Studente 2</meter><br>
-        Studente 3 <meter min="0" max="10" value="9.5">Studente 3</meter><br>
-        Studente 4 <meter min="0" max="10" value="4.5">Studente 4</meter><br>
+        Un alternativa per una citazione è usare il tag <b>cite</b>.
+        In una sicussione accesa Linus disse: <cite>"Parlare è facile. Mostrami il codice".</cite>
     </p>
 
-    <h2>PROGRESS</h2>
+    <h2>&lt;code&gt;</h2>
     <p>
-        In alternativa si può visualizzare un progress bar tramite 
-        l'uso del tag <b>progress</b>.
+        Spesso negli articoli informatici vengono riportati comandi o porzioni
+        di codice.
+        Per farlo in modo corretto usa il tag <b>code</b>.<br>
+        Per installare vscode in Linux usa il comando: <code>apt install vscode</code>
     </p>
+    
+    <h2>&lt;pre&gt;</h2>
     <p>
-        Andamento dei voti:<br>
-        Studente 1 <progress min="0" max="10" value="8">Studente 1</progress><br>
-        Studente 2 <progress min="0" max="10" value="6.5">Studente 2</progress><br>
-        Studente 3 <progress min="0" max="10" value="9.5">Studente 3</progress><br>
-        Studente 4 <progress min="0" max="10" value="4.5">Studente 4</progress><br>
+        Negli articoli può essere necessario riportare una porzione di testo
+        con una formattazione specifica.
+        Per evitare che il browser foramtti il testo in modo autonomo usa 
+        il tag <b>pre</b>. <br>
+        
+        <pre>
+            Questo testo       viene visualizzato esatta 
+            mente come fornito dallo sviluppatore.    
+            Venogno rispettrati    gli spazi e i ritorni 
+            a 
+            capo.
+        </pre>
     </p>
 
-    <h2>DIV</h2>
+    <h2>&lt;details&gt;</h2>
     <p>
-        Un tag estremamente importante nello sviluppo web moderno è
-        <b>DIV</b>.<br>
-        DIV definisce un blocco generico senza una semantica particolare. E' molto simile
-        a <b>span</b>, ma non è di tipo inline ma di tipo <b>blocco</b>.
+        Un modo efficace di visualizzare dei contenuti opzionali
+        è di racchiuderlo in un tag <b>details</b>.<br>
+        <details>
+            <summary>Informazioni Aggiuntive</summary>
+            <p>Qui trovi tutto quel che vuoi sapere.</p>
+          </details>
     </p>
     <p>
-        Possiamo pensare a DIV come un <b>contenitore</b> di altri tag o altri div.<br>
-        Pertanto DIV è utilizzato per creare delle strutture di layout del contenuto web.
-    </p>
-    <p>
-        <div>
-            Blocco 1
-        </div>
-        <div>
-            Blocco 2
-            <div>
-                Blocco 2.1
-                <div>
-                    Blocco 2.1.1
-                </div>
-            </div>
-        </div>
-    </p>
-    <p>
-        Per il momento ha poco senso, ma vedremo più in avanto come DIV 
-        come utilizzare div nello sviluppo web moderno
+        Puoi anche decidere di visualizzare il dettaglio
+        già aperto, usando l'attribbuto <b>open</b><br>
+        <details open="true">
+            <summary>Informazioni Aggiuntive</summary>
+            <p>Qui trovi tutto quel che vuoi sapere.</p>
+          </details>
     </p>
 
 </body>

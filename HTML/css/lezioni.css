@@ -1,0 +1,35 @@
+body {
+	font-size: 1.5em;
+}
+
+.h1_lezioni {
+	border-bottom: 5px solid red;
+	width: 90%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.lezioni_html {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 90%;
+	background-color: rgba(188, 192, 247, 0.993);
+	margin-left: 20px;
+}
+
+.lezioni_html h1 {
+	padding-left: 15px;
+}
+
+.lezioni_css {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 90%;
+	background-color: rgba(222, 247, 188, 0.993);
+	margin-left: 20px;
+	visibility: hidden;
+}
+
+.lezioni_css h1 {
+	padding-left: 15px;
+}

@@ -8,55 +8,72 @@
     <meta name="keywords" content="template, html, lezioni, scuola" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content="1">
-    <title>Template HTML</title>
+    <link rel="stylesheet" href="css/lezioni.css" type="text/css" />
+    <title>Lezione 10</title>
 </head>
 
 <body>
-    <h1 id="inizio">Benvenuti nel fantastico mondo del World Wide Web!!!</h1>
-    <h2>LISTE</h2>
-    <h3>DEFINITION LIST</h3>
+    <h1>Lezione 10: i tag kbd, meter, progress e div</h1>
+    <h2>&lt;kbd&gt;</h2>
     <p>
-        In un testo o un articolo, risulta particolarmente utile organizzare il 
-        contenuto in modo schematico e rappresentare le informazioni tramite una lista.
-    </p>
-    <p>
-        HTML ci viene in aiuto con un <b>definition list</b> tramite 
-        tre tag <b>dl</b>, <b>dt</b> e <b>dd</b><br>
-        <dl>
-            <dt>dl</dt>
-            <dd>Rappresenta un <b>definition list</b></dd>
-            <dt>dt</dt>
-            <dd>Rappresenta un <b>definition term</b></dd>
-            <dt>dd</dt>
-            <dd>Rappresenta un <b>item</b> o la definizione di un termine</dd>
-
-        </dl>
+        Il tag <b>kbd</b> serve per indicare un input che l'utente deve inserire.<br>
+        Se vuoi fare il refresh di una pagina web premi <kbd>Ctrl + R</kbd>
     </p>
 
-    <h3>UNORDERED LIST</h3>
+    <h2>&lt;meter&gt;</h2>
     <p>
-        Ci sono poi le liste di tipo <b>non ordinato</b> che si creano con 2 tag:<br>
-        <ul>
-            <li>
-                <b>ul</b>: tag che definisce la lista non ordinata <b>U</b>nordered <b>L</b>ist
-            </li>
-            <li>
-                <b>li</b>: tag che definisce l'elemento/item della lista <b>L</b>ist <b>I</b>tem
-            </li>
-        </ul>
+        Un modo molto efficace per visualizzare il progresso di un attività o evento
+        è l'uso del tag <b>meter</b>
+    </p>
+    <p>
+        Andamento dei voti:<br>
+        Studente 1 <meter min="0" max="10" value="8.0">Studente 1</meter><br>
+        Studente 2 <meter min="0" max="10" value="6.5">Studente 2</meter><br>
+        Studente 3 <meter min="0" max="10" value="9.5">Studente 3</meter><br>
+        Studente 4 <meter min="0" max="10" value="4.5">Studente 4</meter><br>
     </p>
 
-    <h3>ORDERED LIST</h3>
+    <h2>&lt;progress&gt;</h2>
     <p>
-        Ci sono poi le liste di tipo <b>ordinato</b> che si creano con 2 tag:<br>
-        <ol>
-            <li>
-                <b>ol</b>: tag che definisce la lista ordinata <b>O</b>rdered <b>L</b>ist
-            </li>
-            <li>
-                <b>li</b>: tag che definisce l'elemento/item della lista <b>L</b>ist <b>I</b>tem
-            </li>
-        </ol>
+        In alternativa si può visualizzare un progress bar tramite 
+        l'uso del tag <b>progress</b>.
+    </p>
+    <p>
+        Andamento dei voti:<br>
+        Studente 1 <progress min="0" max="10" value="8">Studente 1</progress><br>
+        Studente 2 <progress min="0" max="10" value="6.5">Studente 2</progress><br>
+        Studente 3 <progress min="0" max="10" value="9.5">Studente 3</progress><br>
+        Studente 4 <progress min="0" max="10" value="4.5">Studente 4</progress><br>
+    </p>
+
+    <h2>&lt;div&gt;</h2>
+    <p>
+        Un tag estremamente importante nello sviluppo web moderno è
+        <b>DIV</b>.<br>
+        DIV definisce un blocco generico senza una semantica particolare. E' molto simile
+        a <b>span</b>, ma non è di tipo inline ma di tipo <b>blocco</b>.
+    </p>
+    <p>
+        Possiamo pensare a DIV come un <b>contenitore</b> di altri tag o altri div.<br>
+        Pertanto DIV è utilizzato per creare delle strutture di layout del contenuto web.
+    </p>
+    <p>
+        <div>
+            Blocco 1
+        </div>
+        <div>
+            Blocco 2
+            <div>
+                Blocco 2.1
+                <div>
+                    Blocco 2.1.1
+                </div>
+            </div>
+        </div>
+    </p>
+    <p>
+        Per il momento ha poco senso, ma vedremo più in avanto come DIV 
+        come utilizzare div nello sviluppo web moderno
     </p>
 
 </body>
