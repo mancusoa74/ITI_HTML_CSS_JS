@@ -19,12 +19,13 @@ File di supporto per le lezioni di HTML, CSS e JS per la 3 ITI Informatica
 - Lezione 13: i form
 - Lezione 14: i tag semantici
 
-
 # CSS
 
-- Lezione 01: x
-- ...
-- Lezione 0N: x
+- Lezione 01: CSS
+- Lezione 02: Inline CSS
+- Lezione 03: Embedded CSS
+- Lezione 04: External CSS
+- Lezione 05: Cacade Style Sheets
 
 
 # JS
